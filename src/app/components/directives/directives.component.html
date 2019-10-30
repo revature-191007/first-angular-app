@@ -1,0 +1,26 @@
+<div id="container">
+    <div 
+        *ngIf="lightSwitch"
+    id="light">
+    </div>
+
+
+    <button
+        (click)="lightSwitch = !lightSwitch"
+    >Light Switch</button>
+
+
+    <input [(ngModel)]="inputFirstName" type="text" name="firstName">
+    <input [(ngModel)]="inputLastName" type="text" name="lastName">
+
+    <button (click)="submitPerson()">Submit</button>
+    <ol>
+        <li *ngFor="let person of people">{{person.firstName}} {{person.lastName}}</li>
+    </ol>
+
+    <!-- *ngSwitch works like *ngIf but with more options -->
+    <div>
+        Current time: {{currentTime | date: 'short'}}
+    </div>
+
+</div>

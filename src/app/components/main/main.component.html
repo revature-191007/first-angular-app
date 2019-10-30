@@ -1,0 +1,29 @@
+<header>
+    <h1>Animal Page</h1>
+    <nav>
+        <ul>
+            <li routerLink="/puppies">Puppies</li>
+            <li routerLink="/kittens">Kittens</li>
+        </ul>
+    </nav>
+</header>
+<hr>
+<div id="content">
+    <!--
+        Steps for setting up routing:
+        1. Declare routes in router.module
+        2. Add router-outlet at the location or locations where you would like to render
+            active routes.
+        3. Add routerLinks to make clickable navigational items.
+
+    -->
+
+    <!-- Takes current URI, passes it through the router.module which will map the route
+    to a component. That component will be rendered by the router-outlet. -->
+    <!-- <router-outlet
+    ></router-outlet> -->
+    <app-puppy
+        [data]="puppies"
+        (submitEvent)="handleSubmission($event)"
+    ></app-puppy>
+</div>

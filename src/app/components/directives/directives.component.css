@@ -1,0 +1,20 @@
+#light {
+    border-radius: 100%;
+    width: 100px;
+    height: 125px;
+    background: yellow;
+    box-shadow: 0 0 500px 300px white;
+    color: black;
+    margin: 50px auto;
+}
+
+#container {
+    background: black;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding-top: 100px;
+}
+
+ol {
+    color: orangered;
+}
